@@ -23,6 +23,7 @@ namespace carRental
         {
             startpoint += 1;
             Myprogress.Value = startpoint;
+            Percentage.Text =""+startpoint;
             if(Myprogress.Value == 100)
             {
                 Myprogress.Value = 0;

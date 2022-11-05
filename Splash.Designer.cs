@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Percentage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Mycar)).BeginInit();
             this.Myprogress.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +58,7 @@
             this.Myprogress.AnimationSpeed = 0.6F;
             this.Myprogress.BackColor = System.Drawing.Color.Transparent;
             this.Myprogress.BaseColor = System.Drawing.Color.Transparent;
+            this.Myprogress.Controls.Add(this.Percentage);
             this.Myprogress.Controls.Add(this.Mycar);
             this.Myprogress.IdleColor = System.Drawing.Color.DarkSlateGray;
             this.Myprogress.IdleOffset = 20;
@@ -99,6 +101,17 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.MyProgress_Tick);
             // 
+            // Percentage
+            // 
+            this.Percentage.AutoSize = true;
+            this.Percentage.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Percentage.ForeColor = System.Drawing.Color.White;
+            this.Percentage.Location = new System.Drawing.Point(143, 224);
+            this.Percentage.Name = "Percentage";
+            this.Percentage.Size = new System.Drawing.Size(34, 30);
+            this.Percentage.TabIndex = 4;
+            this.Percentage.Text = "%";
+            // 
             // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -114,6 +127,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.Mycar)).EndInit();
             this.Myprogress.ResumeLayout(false);
+            this.Myprogress.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +140,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label Percentage;
     }
 }
 
