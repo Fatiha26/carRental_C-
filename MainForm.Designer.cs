@@ -54,7 +54,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(708, 116);
+            this.panel1.Size = new System.Drawing.Size(836, 116);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -63,7 +63,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(663, 9);
+            this.label2.Location = new System.Drawing.Point(777, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 38);
             this.label2.TabIndex = 6;
@@ -76,7 +76,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(280, 55);
+            this.label5.Location = new System.Drawing.Point(337, 58);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 38);
             this.label5.TabIndex = 5;
@@ -87,7 +87,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(172, 13);
+            this.label1.Location = new System.Drawing.Point(226, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(358, 45);
             this.label1.TabIndex = 3;
@@ -97,7 +97,7 @@
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(109, 206);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(176, 200);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
             this.gunaCirclePictureBox1.Size = new System.Drawing.Size(475, 309);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,7 +112,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(60, 125);
+            this.button1.Location = new System.Drawing.Point(118, 125);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 38);
             this.button1.TabIndex = 3;
@@ -127,9 +127,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(173, 125);
+            this.button2.Location = new System.Drawing.Point(232, 125);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 38);
+            this.button2.Size = new System.Drawing.Size(117, 38);
             this.button2.TabIndex = 4;
             this.button2.Text = "CUSTOMER";
             this.button2.UseVisualStyleBackColor = false;
@@ -142,7 +142,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(287, 125);
+            this.button3.Location = new System.Drawing.Point(355, 125);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(108, 38);
             this.button3.TabIndex = 5;
@@ -157,7 +157,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(403, 125);
+            this.button4.Location = new System.Drawing.Point(471, 125);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 38);
             this.button4.TabIndex = 6;
@@ -172,7 +172,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(518, 125);
+            this.button5.Location = new System.Drawing.Point(586, 125);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(108, 38);
             this.button5.TabIndex = 7;
@@ -183,9 +183,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 617);
+            this.panel2.Location = new System.Drawing.Point(0, 634);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(708, 29);
+            this.panel2.Size = new System.Drawing.Size(836, 29);
             this.panel2.TabIndex = 8;
             // 
             // button6
@@ -195,18 +195,19 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(287, 559);
+            this.button6.Location = new System.Drawing.Point(355, 554);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(108, 38);
             this.button6.TabIndex = 9;
             this.button6.Text = "LOGOUT";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 646);
+            this.ClientSize = new System.Drawing.Size(836, 663);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button5);

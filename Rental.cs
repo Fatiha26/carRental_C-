@@ -23,7 +23,7 @@ namespace carRental
         private void fillcombo()
         {
             Con.Open();
-            string query = "select  RegNum from CarTbl";
+            string query = "select  RegNum from CarTbl where Available='"+"Yes "+"'";
             SqlCommand cmd = new SqlCommand(query, Con);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
@@ -82,8 +82,17 @@ namespace carRental
            //MessageBox.Show("Car Successfully Updated");
             Con.Close();
             populate();
-    }
-        private void Rental_Load(object sender, EventArgs e)
+        }
+        private void UpdateonRentDelete()
+        {
+            Con.Open();
+            string query = "update CarTbl set Available='" + "Yes" + "' where RegNum='" + CarRegCb.SelectedValue.ToString() + "';";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            cmd.ExecuteNonQuery();
+            //MessageBox.Show("Car Successfully Updated");
+            Con.Close();
+        }
+            private void Rental_Load(object sender, EventArgs e)
         {
             fillcombo();
             fillCustomer();
@@ -136,6 +145,42 @@ namespace carRental
             this.Hide();
             MainForm main = new MainForm();
             main.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (idTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "delete from RentalTbl where RentId=" + idTb.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Rental Successfully Deleted");
+                    Con.Close();
+                    populate();
+                    UpdateonRentDelete();
+                }
+                catch (Exception Myex)
+                {
+                    MessageBox.Show(Myex.Message);
+                }
+            }
+        }
+
+        private void RentalDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idTb.Text = RentalDGV.SelectedRows[0].Cells[0].Value.ToString();
+            CarRegCb.Text = RentalDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CustNameTb.Text = RentalDGV.SelectedRows[0].Cells[2].Value.ToString();
+            FeesTb.Text = RentalDGV.SelectedRows[0].Cells[5].Value.ToString();
+
+
         }
     }
 }

@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.Mycar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.Myprogress = new Guna.UI.WinForms.GunaCircleProgressBar();
+            this.Percentage = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Percentage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Mycar)).BeginInit();
             this.Myprogress.SuspendLayout();
             this.SuspendLayout();
@@ -75,6 +75,17 @@
             this.Myprogress.TabIndex = 1;
             this.Myprogress.Click += new System.EventHandler(this.gunaCircleProgressBar1_Click);
             // 
+            // Percentage
+            // 
+            this.Percentage.AutoSize = true;
+            this.Percentage.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Percentage.ForeColor = System.Drawing.Color.White;
+            this.Percentage.Location = new System.Drawing.Point(143, 224);
+            this.Percentage.Name = "Percentage";
+            this.Percentage.Size = new System.Drawing.Size(34, 30);
+            this.Percentage.TabIndex = 4;
+            this.Percentage.Text = "%";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -101,17 +112,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.MyProgress_Tick);
             // 
-            // Percentage
-            // 
-            this.Percentage.AutoSize = true;
-            this.Percentage.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Percentage.ForeColor = System.Drawing.Color.White;
-            this.Percentage.Location = new System.Drawing.Point(143, 224);
-            this.Percentage.Name = "Percentage";
-            this.Percentage.Size = new System.Drawing.Size(34, 30);
-            this.Percentage.TabIndex = 4;
-            this.Percentage.Text = "%";
-            // 
             // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -125,6 +125,7 @@
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Splash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Mycar)).EndInit();
             this.Myprogress.ResumeLayout(false);
             this.Myprogress.PerformLayout();

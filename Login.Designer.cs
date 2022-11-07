@@ -40,8 +40,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Uname = new System.Windows.Forms.TextBox();
+            this.PassTb = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -139,6 +140,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -175,31 +177,45 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "Password";
             // 
-            // textBox1
+            // Uname
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(741, 212);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 41);
-            this.textBox1.TabIndex = 9;
+            this.Uname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Uname.Location = new System.Drawing.Point(741, 212);
+            this.Uname.Multiline = true;
+            this.Uname.Name = "Uname";
+            this.Uname.Size = new System.Drawing.Size(311, 41);
+            this.Uname.TabIndex = 9;
             // 
-            // textBox2
+            // PassTb
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(741, 329);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(311, 41);
-            this.textBox2.TabIndex = 10;
+            this.PassTb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PassTb.Location = new System.Drawing.Point(741, 329);
+            this.PassTb.Multiline = true;
+            this.PassTb.Name = "PassTb";
+            this.PassTb.Size = new System.Drawing.Size(311, 41);
+            this.PassTb.TabIndex = 10;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label9.Location = new System.Drawing.Point(1052, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 38);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "X";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 661);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.PassTb);
+            this.Controls.Add(this.Uname);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -231,7 +247,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Uname;
+        private System.Windows.Forms.TextBox PassTb;
+        private System.Windows.Forms.Label label9;
     }
 }
