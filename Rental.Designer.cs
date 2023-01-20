@@ -58,6 +58,8 @@
             this.ReturnDate = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.CustCb = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RentalDGV)).BeginInit();
@@ -66,6 +68,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 725);
             this.panel2.Name = "panel2";
@@ -446,6 +449,18 @@
             this.CustCb.TabIndex = 78;
             this.CustCb.SelectionChangeCommitted += new System.EventHandler(this.CustCb_SelectionChangeCommitted);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(501, -1);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(125, 30);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "LamiaFatiha";
+            // 
             // Rental
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -478,6 +493,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rental";
             this.Load += new System.EventHandler(this.Rental_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
@@ -515,5 +532,6 @@
         private Guna.UI.WinForms.GunaDateTimePicker ReturnDate;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox CustCb;
+        private System.Windows.Forms.Label label12;
     }
 }

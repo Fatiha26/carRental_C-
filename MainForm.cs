@@ -66,5 +66,12 @@ namespace carRental
             Users user = new Users();
             user.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DashBoard board = new DashBoard();
+            board.Show();
+        }
     }
 }

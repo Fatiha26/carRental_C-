@@ -64,15 +64,15 @@ namespace carRental
         {
             CarIdTb.Text = RentalDGV.SelectedRows[0].Cells[1].Value.ToString();
             CustNameTb.Text = RentalDGV.SelectedRows[0].Cells[2].Value.ToString();
-            ReturnDate.Text = RentalDGV.SelectedRows[0].Cells[4].Value.ToString();
+            Convert.ToInt32(ReturnDate.Text) = RentalDGV.SelectedRows[0].Cells[4].Value.ToString();
             DateTime d1 = ReturnDate.Value.Date;
-            DateTime d2 = DateTime.Now;
+            var d2 = DateTime.Now;
             TimeSpan t = d2 - d1;
             int NrOfDays = Convert.ToInt32(t.TotalDays);
             if(NrOfDays <= 0)
             {
                 DelayTb.Text = "No delay";
-                FineTb.Text = "No Fine";
+                FineTb.Text = "0";
             }
             else
             {
