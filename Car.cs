@@ -56,7 +56,7 @@ namespace carRental
                 }
             }
         }
-
+   
         private void Car_Load(object sender, EventArgs e)
         {
             populate();
@@ -134,6 +134,31 @@ namespace carRental
                     MessageBox.Show(Myex.Message);
                 }
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void Search_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string flag = "";
+            if(Search.SelectedItem.ToString()=="Available")
+            {
+                flag = "Yes";
+            }else
+            {
+                flag = "No";
+            }
+            Con.Open();
+            string query = "select * from CarTbl where Available = '"+flag+"'";
+            SqlDataAdapter da = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(da);
+            var ds = new DataSet();
+            da.Fill(ds);
+            CarsDGV.DataSource = ds.Tables[0];
+            Con.Close();
         }
     }
 }

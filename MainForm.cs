@@ -45,9 +45,9 @@ namespace carRental
 
         private void button4_Click(object sender, EventArgs e)
         {
-            /*this.Hide();
-            Rental rent = new Rental();
-            rent.Show();*/
+            this.Hide();
+            Return ret = new Return();
+            ret.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -58,6 +58,13 @@ namespace carRental
         private void button6_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Users user = new Users();
+            user.Show();
         }
     }
 }

@@ -54,6 +54,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.AvailableCb = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.Search = new System.Windows.Forms.ComboBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CarsDGV)).BeginInit();
@@ -69,7 +71,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1169, 116);
+            this.panel1.Size = new System.Drawing.Size(1177, 116);
             this.panel1.TabIndex = 2;
             // 
             // label2
@@ -125,9 +127,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 798);
+            this.panel2.Location = new System.Drawing.Point(0, 867);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1169, 29);
+            this.panel2.Size = new System.Drawing.Size(1177, 29);
             this.panel2.TabIndex = 25;
             // 
             // CarsDGV
@@ -158,13 +160,13 @@
             this.CarsDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.CarsDGV.EnableHeadersVisualStyles = false;
             this.CarsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CarsDGV.Location = new System.Drawing.Point(485, 193);
+            this.CarsDGV.Location = new System.Drawing.Point(485, 240);
             this.CarsDGV.Name = "CarsDGV";
             this.CarsDGV.RowHeadersVisible = false;
             this.CarsDGV.RowHeadersWidth = 30;
             this.CarsDGV.RowTemplate.Height = 28;
             this.CarsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CarsDGV.Size = new System.Drawing.Size(621, 507);
+            this.CarsDGV.Size = new System.Drawing.Size(621, 407);
             this.CarsDGV.TabIndex = 37;
             this.CarsDGV.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.CarsDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -370,11 +372,42 @@
             this.label9.TabIndex = 41;
             this.label9.Text = "Available";
             // 
+            // Search
+            // 
+            this.Search.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Search.FormattingEnabled = true;
+            this.Search.Items.AddRange(new object[] {
+            "Available",
+            "Rented"});
+            this.Search.Location = new System.Drawing.Point(621, 188);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(254, 38);
+            this.Search.TabIndex = 42;
+            this.Search.SelectionChangeCommitted += new System.EventHandler(this.Search_SelectionChangeCommitted);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(877, 186);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(108, 45);
+            this.button5.TabIndex = 43;
+            this.button5.Text = "Refresh";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Car
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1169, 827);
+            this.ClientSize = new System.Drawing.Size(1177, 896);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Search);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.AvailableCb);
             this.Controls.Add(this.PriceTb);
@@ -431,5 +464,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox AvailableCb;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox Search;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -395,8 +395,9 @@
             this.RentDate.OnPressedColor = System.Drawing.Color.Black;
             this.RentDate.Size = new System.Drawing.Size(263, 45);
             this.RentDate.TabIndex = 75;
-            this.RentDate.Text = "Sunday, November 6, 2022";
-            this.RentDate.Value = new System.DateTime(2022, 11, 6, 21, 30, 50, 922);
+            this.RentDate.Text = "Thursday, January 19, 2023";
+            this.RentDate.Value = new System.DateTime(2023, 1, 19, 0, 0, 0, 0);
+            this.RentDate.ValueChanged += new System.EventHandler(this.RentDate_ValueChanged);
             // 
             // ReturnDate
             // 
@@ -417,8 +418,8 @@
             this.ReturnDate.OnPressedColor = System.Drawing.Color.Black;
             this.ReturnDate.Size = new System.Drawing.Size(263, 45);
             this.ReturnDate.TabIndex = 77;
-            this.ReturnDate.Text = "Sunday, November 6, 2022";
-            this.ReturnDate.Value = new System.DateTime(2022, 11, 6, 21, 30, 50, 922);
+            this.ReturnDate.Text = "Thursday, January 19, 2023";
+            this.ReturnDate.Value = new System.DateTime(2023, 1, 19, 0, 0, 0, 0);
             // 
             // label11
             // 

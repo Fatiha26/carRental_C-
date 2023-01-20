@@ -182,5 +182,10 @@ namespace carRental
 
 
         }
+
+        private void RentDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
