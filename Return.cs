@@ -30,6 +30,17 @@ namespace carRental
             RentalDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
+        private void populateReturn()
+        {
+            Con.Open();
+            string query1 = "select * from ReturnTbl";
+            SqlDataAdapter da1 = new SqlDataAdapter(query1, Con);
+            SqlCommandBuilder builder1 = new SqlCommandBuilder(da1);
+            var ds1 = new DataSet();
+            da1.Fill(ds1);
+            ReturnDGV.DataSource = ds1.Tables[0];
+            Con.Close();
+        }
         private void populateRet()
         {
             Con.Open();
@@ -60,11 +71,12 @@ namespace carRental
             //UpdateonRentDelete();
         }
 
+
         private void RentalDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             CarIdTb.Text = RentalDGV.SelectedRows[0].Cells[1].Value.ToString();
             CustNameTb.Text = RentalDGV.SelectedRows[0].Cells[2].Value.ToString();
-            Convert.ToInt32(ReturnDate.Text) = RentalDGV.SelectedRows[0].Cells[4].Value.ToString();
+            ReturnDate.Text = RentalDGV.SelectedRows[0].Cells[4].Value.ToString();
             DateTime d1 = ReturnDate.Value.Date;
             var d2 = DateTime.Now;
             TimeSpan t = d2 - d1;
@@ -123,12 +135,41 @@ namespace carRental
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (idTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "delete from ReturnTbl where ReturnId=" + idTb.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Rental Successfully Deleted");
+                    Con.Close();
+                    populateReturn();
+                    //UpdateonRentDelete();
+                }
+                catch (Exception Myex)
+                {
+                    MessageBox.Show(Myex.Message);
+                }
+            }
         }
 
         private void ReturnDate_ValueChanged(object sender, EventArgs e)
         {
 
         }
+
+        private void ReturnDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idTb.Text = ReturnDGV.SelectedRows[0].Cells[0].Value.ToString();
+            CarIdTb.Text = ReturnDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CustNameTb.Text = ReturnDGV.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
     }
 }

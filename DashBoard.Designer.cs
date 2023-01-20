@@ -35,11 +35,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.CarLbl = new System.Windows.Forms.Label();
+            this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.CustLbl = new System.Windows.Forms.Label();
             this.gunaCirclePictureBox3 = new Guna.UI.WinForms.GunaCirclePictureBox();
@@ -51,13 +52,12 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
@@ -70,9 +70,9 @@
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(255, 155);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(240, 122);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(434, 241);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(434, 285);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 3;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -136,9 +136,21 @@
             this.panel2.Size = new System.Drawing.Size(904, 29);
             this.panel2.TabIndex = 9;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(391, -1);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 30);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "LamiaFatiha";
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.BackColor = System.Drawing.Color.PeachPuff;
             this.panel3.Controls.Add(this.CarLbl);
             this.panel3.Controls.Add(this.gunaCirclePictureBox2);
             this.panel3.Controls.Add(this.panel4);
@@ -147,15 +159,17 @@
             this.panel3.Size = new System.Drawing.Size(236, 141);
             this.panel3.TabIndex = 10;
             // 
-            // panel4
+            // CarLbl
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(236, 43);
-            this.panel4.TabIndex = 11;
+            this.CarLbl.AutoSize = true;
+            this.CarLbl.BackColor = System.Drawing.Color.Transparent;
+            this.CarLbl.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CarLbl.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.CarLbl.Location = new System.Drawing.Point(136, 67);
+            this.CarLbl.Name = "CarLbl";
+            this.CarLbl.Size = new System.Drawing.Size(72, 38);
+            this.CarLbl.TabIndex = 8;
+            this.CarLbl.Text = "Cars";
             // 
             // gunaCirclePictureBox2
             // 
@@ -169,6 +183,16 @@
             this.gunaCirclePictureBox2.TabStop = false;
             this.gunaCirclePictureBox2.UseTransfarantBackground = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(236, 43);
+            this.panel4.TabIndex = 11;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -181,21 +205,9 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Cars";
             // 
-            // CarLbl
-            // 
-            this.CarLbl.AutoSize = true;
-            this.CarLbl.BackColor = System.Drawing.Color.Transparent;
-            this.CarLbl.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CarLbl.ForeColor = System.Drawing.Color.White;
-            this.CarLbl.Location = new System.Drawing.Point(136, 67);
-            this.CarLbl.Name = "CarLbl";
-            this.CarLbl.Size = new System.Drawing.Size(70, 38);
-            this.CarLbl.TabIndex = 8;
-            this.CarLbl.Text = "Cars";
-            // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel5.BackColor = System.Drawing.Color.PeachPuff;
             this.panel5.Controls.Add(this.CustLbl);
             this.panel5.Controls.Add(this.gunaCirclePictureBox3);
             this.panel5.Controls.Add(this.panel6);
@@ -208,11 +220,11 @@
             // 
             this.CustLbl.AutoSize = true;
             this.CustLbl.BackColor = System.Drawing.Color.Transparent;
-            this.CustLbl.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustLbl.ForeColor = System.Drawing.Color.White;
+            this.CustLbl.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustLbl.ForeColor = System.Drawing.Color.RoyalBlue;
             this.CustLbl.Location = new System.Drawing.Point(136, 67);
             this.CustLbl.Name = "CustLbl";
-            this.CustLbl.Size = new System.Drawing.Size(71, 38);
+            this.CustLbl.Size = new System.Drawing.Size(74, 38);
             this.CustLbl.TabIndex = 8;
             this.CustLbl.Text = "Cust";
             // 
@@ -222,7 +234,7 @@
             this.gunaCirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox3.Image")));
             this.gunaCirclePictureBox3.Location = new System.Drawing.Point(12, 60);
             this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
-            this.gunaCirclePictureBox3.Size = new System.Drawing.Size(89, 55);
+            this.gunaCirclePictureBox3.Size = new System.Drawing.Size(86, 62);
             this.gunaCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox3.TabIndex = 11;
             this.gunaCirclePictureBox3.TabStop = false;
@@ -244,7 +256,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(70, 0);
+            this.label6.Location = new System.Drawing.Point(48, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(148, 38);
             this.label6.TabIndex = 7;
@@ -252,7 +264,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel7.BackColor = System.Drawing.Color.PeachPuff;
             this.panel7.Controls.Add(this.UsersLbl);
             this.panel7.Controls.Add(this.gunaCirclePictureBox4);
             this.panel7.Controls.Add(this.panel8);
@@ -265,11 +277,11 @@
             // 
             this.UsersLbl.AutoSize = true;
             this.UsersLbl.BackColor = System.Drawing.Color.Transparent;
-            this.UsersLbl.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsersLbl.ForeColor = System.Drawing.Color.White;
+            this.UsersLbl.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsersLbl.ForeColor = System.Drawing.Color.RoyalBlue;
             this.UsersLbl.Location = new System.Drawing.Point(136, 66);
             this.UsersLbl.Name = "UsersLbl";
-            this.UsersLbl.Size = new System.Drawing.Size(85, 38);
+            this.UsersLbl.Size = new System.Drawing.Size(87, 38);
             this.UsersLbl.TabIndex = 8;
             this.UsersLbl.Text = "Users";
             // 
@@ -277,9 +289,9 @@
             // 
             this.gunaCirclePictureBox4.BaseColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox4.Image")));
-            this.gunaCirclePictureBox4.Location = new System.Drawing.Point(12, 60);
+            this.gunaCirclePictureBox4.Location = new System.Drawing.Point(16, 57);
             this.gunaCirclePictureBox4.Name = "gunaCirclePictureBox4";
-            this.gunaCirclePictureBox4.Size = new System.Drawing.Size(89, 55);
+            this.gunaCirclePictureBox4.Size = new System.Drawing.Size(74, 65);
             this.gunaCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox4.TabIndex = 11;
             this.gunaCirclePictureBox4.TabStop = false;
@@ -322,18 +334,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(391, -1);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 30);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "LamiaFatiha";
-            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -358,9 +358,9 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox3)).EndInit();

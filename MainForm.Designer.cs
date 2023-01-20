@@ -40,9 +40,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -193,6 +193,18 @@
             this.panel2.Size = new System.Drawing.Size(836, 29);
             this.panel2.TabIndex = 8;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(337, -2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 30);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "LamiaFatiha";
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -222,18 +234,6 @@
             this.button7.Text = "DashBoard";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(337, -2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 30);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "LamiaFatiha";
             // 
             // MainForm
             // 
