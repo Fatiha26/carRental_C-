@@ -69,10 +69,11 @@
             // gunaCirclePictureBox1
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaCirclePictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(240, 122);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(240, 111);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(434, 285);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(434, 346);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 3;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -87,7 +88,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(904, 116);
+            this.panel1.Size = new System.Drawing.Size(930, 105);
             this.panel1.TabIndex = 4;
             // 
             // label2
@@ -96,7 +97,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(839, 20);
+            this.label2.Location = new System.Drawing.Point(848, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 38);
             this.label2.TabIndex = 6;
@@ -131,30 +132,31 @@
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 634);
+            this.panel2.Location = new System.Drawing.Point(0, 679);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(904, 29);
+            this.panel2.Size = new System.Drawing.Size(930, 29);
             this.panel2.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(391, -1);
+            this.label4.Location = new System.Drawing.Point(397, -1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 30);
+            this.label4.Size = new System.Drawing.Size(115, 28);
             this.label4.TabIndex = 38;
             this.label4.Text = "LamiaFatiha";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel3.BackColor = System.Drawing.Color.Snow;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.CarLbl);
             this.panel3.Controls.Add(this.gunaCirclePictureBox2);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(56, 428);
+            this.panel3.Location = new System.Drawing.Point(75, 466);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(236, 141);
             this.panel3.TabIndex = 10;
@@ -190,7 +192,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(236, 43);
+            this.panel4.Size = new System.Drawing.Size(232, 43);
             this.panel4.TabIndex = 11;
             // 
             // label3
@@ -207,11 +209,12 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel5.BackColor = System.Drawing.Color.Snow;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.CustLbl);
             this.panel5.Controls.Add(this.gunaCirclePictureBox3);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(322, 428);
+            this.panel5.Location = new System.Drawing.Point(341, 466);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(236, 141);
             this.panel5.TabIndex = 12;
@@ -247,7 +250,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(236, 43);
+            this.panel6.Size = new System.Drawing.Size(232, 43);
             this.panel6.TabIndex = 11;
             // 
             // label6
@@ -264,11 +267,12 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel7.BackColor = System.Drawing.Color.Snow;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel7.Controls.Add(this.UsersLbl);
             this.panel7.Controls.Add(this.gunaCirclePictureBox4);
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(588, 428);
+            this.panel7.Location = new System.Drawing.Point(607, 466);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(236, 141);
             this.panel7.TabIndex = 13;
@@ -304,7 +308,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(236, 43);
+            this.panel8.Size = new System.Drawing.Size(232, 43);
             this.panel8.TabIndex = 11;
             // 
             // label8
@@ -326,7 +330,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(399, 590);
+            this.button4.Location = new System.Drawing.Point(400, 618);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 38);
             this.button4.TabIndex = 37;
@@ -338,7 +342,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 663);
+            this.ClientSize = new System.Drawing.Size(930, 708);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);

@@ -29,10 +29,13 @@ namespace carRental
         {
 
         }
-
+        private void Login_Load(object sender, EventArgs e)
+        {
+            PassTb.PasswordChar = '*';
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            string query = "select count(*) from UserTbl where Uname='" + Uname.Text + "' and Upass='" + PassTb.Text + "'";
+            string query = "select count(*) from UserTbl where Uname='" + Uname.Text + "' and Upass = '" + PassTb.Text + "'";
             Con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(query, Con);
             DataTable dt = new DataTable();
@@ -53,6 +56,20 @@ namespace carRental
         private void label9_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+       
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                PassTb.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                PassTb.UseSystemPasswordChar = false;
+            }
         }
     }
 }

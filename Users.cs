@@ -108,7 +108,6 @@ namespace carRental
         {
             Uid.Text = UserDGV.SelectedRows[0].Cells[0].Value.ToString();
             Uname.Text = UserDGV.SelectedRows[0].Cells[1].Value.ToString();
-            Upass.Text = UserDGV.SelectedRows[0].Cells[2].Value.ToString();
 
         }
 
